@@ -21,8 +21,7 @@ class Student
   
   def self.drop_table
     sql = <<-SQL
-    DROP TABLE students (name, grade)
-      VALUES (?,?);
+    DROP TABLE students (id, name, grade);
     SQL
   end
   
