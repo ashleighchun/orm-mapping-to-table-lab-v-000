@@ -23,6 +23,7 @@ class Student
     sql = <<-SQL
     DROP TABLE students (id, name, grade);
     SQL
+    DB[:conn].execute(sql)
   end
   
   def save
